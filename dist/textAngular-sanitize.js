@@ -516,8 +516,8 @@ function validStyles(styleAttr){
 	angular.forEach(styleArray, function(value){
 		var v = value.split(':');
 		if(v.length == 2){
-			var key = trim(v[0].toLowerCase()));
-			var value = trim(v[1].toLowerCase()));
+			var key = trim(v[0].toLowerCase());
+			var value = trim(v[1].toLowerCase());
 			if(
 				(key === 'color' || key === 'background-color') && (
 					value.match(/^rgb\([0-9%,\. ]*\)$/i)
