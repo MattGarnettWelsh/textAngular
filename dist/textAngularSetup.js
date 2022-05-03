@@ -364,7 +364,7 @@ angular.module('textAngularSetup', [])
             container.append(buttonGroup);
 
             buttonGroup = angular.element('<div class="btn-group">');
-            var remove = angular.element('<button type="button" class="btn btn-default btn-sm btn-small" unselectable="on" tabindex="-1"><i class="fa fa-trash-o"></i></button>');
+            var remove = angular.element('<button type="button" class="btn btn-default btn-sm btn-small" unselectable="on" tabindex="-1"><i class="fa fa-trash"></i></button>');
             remove.on('click', function(event){
                 event.preventDefault();
                 $element.remove();
@@ -861,7 +861,7 @@ angular.module('textAngularSetup', [])
     };
 
     taRegisterTool('insertImage', {
-        iconclass: 'fa fa-picture-o',
+        iconclass: 'fa fa-image',
         tooltiptext: taTranslations.insertImage.tooltip,
         action: function(){
             var imageLink;
@@ -895,7 +895,7 @@ angular.module('textAngularSetup', [])
         }
     });
     taRegisterTool('insertVideo', {
-        iconclass: 'fa fa-youtube-play',
+        iconclass: 'fa fa-video',
         tooltiptext: taTranslations.insertVideo.tooltip,
         action: function(){
             var urlPrompt;
